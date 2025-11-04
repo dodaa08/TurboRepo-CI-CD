@@ -1,0 +1,27 @@
+{
+  "name": "http-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "npm run build && npm run start",
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@repo/prisma": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "tsx": "^4.20.6"
+  }
+}
